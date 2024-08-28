@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:elevation="10dp"
+    android:shadowRadius="2"
+    android:padding="8dp">
+
+    <!-- TextView on the left -->
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:text="Job Details"
+        android:textStyle="bold"
+        android:textColor="@color/textprimary"
+        android:textSize="20sp"
+        android:layout_marginStart="16dp"
+         />
+
+    <ImageView
+        android:id="@+id/toolbar_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:src="@drawable/baseline_bookmark_24"
+        android:contentDescription="Save Job"
+        android:layout_marginEnd="16dp" />
+
+</androidx.appcompat.widget.Toolbar>

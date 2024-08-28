@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_margin="12dp"
+    android:background="@drawable/job_card_bg"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1.8">
+            <TextView
+                android:id="@+id/job_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Title"
+                android:layout_margin="4dp"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:fontFamily="@font/plusjakarta_medium"
+                android:scrollHorizontally="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:textColor="@color/textprimary" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingBottom="6dp"
+                android:layout_margin="4dp">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/location_icon"/>
+                <TextView
+                    android:id="@+id/job_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/JobDetailsText"
+                    android:text="Location"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingBottom="6dp"
+                android:layout_margin="4dp">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/payment_icon"/>
+
+                <TextView
+                    android:id="@+id/job_salary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    style="@style/JobDetailsText"
+                    android:text="Salary" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_margin="4dp">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/contact_icon"/>
+                <TextView
+                    android:id="@+id/job_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/JobDetailsText"
+                    android:text="Phone" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/button_view_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Details"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:layout_gravity="end"
+        />
+</LinearLayout>
